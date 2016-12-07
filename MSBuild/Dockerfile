@@ -15,8 +15,6 @@ RUN Install-WindowsFeature Net-Framework-45-ASPNET ; \
     Install-WindowsFeature Web-Asp-Net45
 
 #Add NuGet
-#RUN Invoke-WebRequest "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" -OutFile "C:\windows\nuget.exe" -UseBasicParsing  
-#WORKDIR "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v12.0"
 RUN Invoke-WebRequest "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" -OutFile "C:\windows\nuget.exe" -UseBasicParsing
 
 #Install Web Targets
